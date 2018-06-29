@@ -23,6 +23,17 @@ En este archivo hay que poner la api key que obtuvieron del portal de desarrolla
 ```csharp
 
 BingMapView view = new BingMapView();
-view.Pins.Add(new Pin(19.92931,12.921392));
+
+// Set Center of Map
+view.SetCenter(new Center(19.479778, 12.834520, 12));
+
+// Add Pin
+var pin = new Pin(19.479778, 12.834520) { Title = "Yo", Data = "Hola que hace!!" };
+// Evento click en el pin
+pin.Click += Pin_Click;
+view.Pins.Add(pin);
+
+// Hacer que el mapa muestre todos los pins agregados
+view.ZoomForAllPins();
 
 ```
