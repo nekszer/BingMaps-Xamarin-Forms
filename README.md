@@ -9,6 +9,8 @@ Para usar el plugin, solo importa cada contenido de la carpeta plugin al proyect
 # Android
 La carpeta de BingMap debe ir dentro de Assets, y debe tener el archivo index.html la accion de compilacion como AndroidAsset 
 
+Importar Mono.Android.Export.dll de los ensamblados del framework
+
 # iOS
 La carpeta BingMap se copia como esta, el archivo index.html debe tener la accion de compilacion como BundleResource en propiedades
 
